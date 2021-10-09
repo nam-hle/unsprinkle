@@ -23,15 +23,13 @@ const Wrapper = styled.div`
   position: relative;
   min-width: 300px;
   height: 2em;
+  display: flex;
+  align-items: center;
 `;
 
 const Input = styled.input`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   width: 100%;
+  height: 100%;
   background: var(--color-gray-100);
   /* Arbitrarily large value to ensure rounding */
   border-radius: 1000px;

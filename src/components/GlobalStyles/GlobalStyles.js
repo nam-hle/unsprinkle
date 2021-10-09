@@ -48,9 +48,16 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-variable.woff2') format('woff2');
+  font-weight: 300 900;
+  font-display: fallback;
+}
+
 * {
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   font-synthesis: none;
 }

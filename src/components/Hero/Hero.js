@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import {generateSrcSet} from "../PhotoGridItem/PhotoGridItem";
 
 const Hero = () => {
+  const src = "/images/hero-img.jpg";
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
+      <HeroImage src={src} srcSet={generateSrcSet(src)} />
       <Swoop src="/swoop.svg" />
     </Wrapper>
   );
